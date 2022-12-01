@@ -19,10 +19,18 @@ export class DetailSmartphoneComponent {
       // @ts-ignore
       this.id = +paramMap.get('id');
       this.getSmartphone(this.id);
+      this.initializeForm();
     });
   }
 
   ngOnInit() {
+  }
+  initializeForm(){
+    this.smartphoneForm = new FormGroup({
+      title: new FormControl(),
+      price: new FormControl(),
+      description: new FormControl(),
+    });
   }
 
   getSmartphone(id: number) {
