@@ -1,0 +1,19 @@
+<h1>Danh sách</h1>
+<a routerLink="/save" class="btn btn-info">Tạo mới</a>
+<table class="table">
+  <tr>
+    <td>STT</td>
+    <td>Producer</td>
+    <td>Giá</td>
+    <td colspan="2"></td>
+  </tr>
+  <tr *ngFor="let smartphone of smartphones; index as i">
+    <td>{{i + 1}}</td>
+    <td><a [routerLink]="['/detail',smartphone.id]" class="btn btn-info">{{smartphone.title}}</a></td>
+    <td>{{smartphone.price}}</td>
+    <td>{{smartphone.description}}</td>
+    <td><a [routerLink]="['/edit',smartphone.id]" class="btn btn-info">Edit</a></td>
+    <td><a [routerLink]="['/delete',smartphone.id]" class="btn btn-info">Delete</a></td>
+  </tr>
+</table>
+

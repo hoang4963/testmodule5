@@ -1,0 +1,21 @@
+<h1>Cập nhật </h1>
+<form [formGroup]="smartphoneForm" (ngSubmit)="updateSmartphone(id)">
+  <table>
+    <tr>
+      <td>Title:</td>
+      <td><input type="text" formControlName="title"></td>
+    </tr>
+    <tr>
+      <td>Price:</td>
+      <td><input type="text" formControlName="price"></td>
+    </tr>
+    <tr>
+      <td>Description:</td>
+      <td><input type="text" formControlName="description"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button class="btn btn-info">Cập nhật</button></td>
+    </tr>
+  </table>
+</form>

@@ -1,0 +1,23 @@
+<h1>Tạo danh mục mới</h1>
+<form [formGroup]="smartphoneForm" (ngSubmit)="submit()">
+  <table>
+    <tr>
+      <td>Title:</td>
+      <td><input type="text" formControlName="title"></td>
+    </tr>
+    <tr>
+      <td>Price:</td>
+      <td><input type="text" formControlName="price"></td>
+    </tr>
+    <tr>
+      <td>Description:</td>
+      <td><input type="text" formControlName="description"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button class="btn btn-info">Tạo mới</button>
+      </td>
+    </tr>
+  </table>
+</form>
