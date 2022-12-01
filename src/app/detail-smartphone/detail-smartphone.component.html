@@ -2,7 +2,7 @@
 <form [formGroup]="smartphoneForm">
 
 
-      <p>Title:</p><br>
+      <p>Title:</p>
       <input type="text" formControlName="title">
 
 
@@ -12,6 +12,8 @@
 
       <p>Model:</p>
       <input type="text" formControlName="description">
+  <br>
+  <a [routerLink]="['']" class="btn btn-info">Back</a>
 
 
 </form>
