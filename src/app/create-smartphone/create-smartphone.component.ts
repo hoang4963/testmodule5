@@ -31,4 +31,5 @@ export class CreateSmartphoneComponent implements OnInit{
       console.log(e);
     });
   }
+
 }

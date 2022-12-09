@@ -13,8 +13,6 @@ export class ListSmartphoneComponent implements OnInit{
   constructor(private smartphoneService: SmartphoneService) {
   }
 
-
-
   ngOnInit() {
     this.smartphoneService.getAll().subscribe(result => {
         this.smartphones = result;

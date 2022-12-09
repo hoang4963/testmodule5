@@ -10,7 +10,7 @@ import {DetailSmartphoneComponent} from "./detail-smartphone/detail-smartphone.c
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'list',
     component: ListSmartphoneComponent
   },
   {
